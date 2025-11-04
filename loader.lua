@@ -50,9 +50,6 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
------------------------------------------------------
--- // Tabs & Sections
------------------------------------------------------
 local MainTab = Window:CreateTab("🏠 Home", nil)
 local TogglesSection = MainTab:CreateSection("Toggles")
 
@@ -318,10 +315,6 @@ local TeleportKeybind = OtherTab:CreateKeybind({
 	end,
 })
 
------------------------------------------------------
--- // 🧩 Dachshund Hub Addon: Utilities, Visuals, Anti-AFK, HUD
------------------------------------------------------
-
 -- ✅ SAFETY CHECK
 if not Window then
    warn("Dachshund Hub Addon: Rayfield window missing.")
@@ -457,10 +450,6 @@ RunService.RenderStepped:Connect(function()
       tostring(flying and "ON" or "OFF"),
       tostring(noclip and "ON" or "OFF"))
 end)
-
------------------------------------------------------
--- // 🧩 Dachshund Hub Addon: Player ESP + Finder + Color Picker
------------------------------------------------------
 
 -- ✅ SAFETY CHECK
 if not Window then
